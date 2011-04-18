@@ -1,0 +1,10 @@
+A handy script to watch your files and run a command in the background.
+
+USAGE
+=====
+
+gem install directory_watcher rev
+cp watch/watch.rb RAILS_ROOT
+cd RAILS_ROOT
+ruby watch.rb
+
