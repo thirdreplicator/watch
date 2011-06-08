@@ -1,2 +1,3 @@
-require 'directory_watcher'
-require 'rev'
+source :rubygems
+gem 'directory_watcher'
+gem 'rev'

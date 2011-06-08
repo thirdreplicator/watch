@@ -1,7 +1,7 @@
 require 'directory_watcher'
  
-#command = 'rspec --drb --color spec'
-command = "cucumber --drb -f html -o tmp/cuke.html -f features"
+command = 'rspec --drb --color spec'
+#command = "cucumber --drb -f html -o tmp/cuke.html -f features"
 
 dw = DirectoryWatcher.new '.', :pre_load => true, :scanner => :rev
 dw.glob = '**/*.{rb,feature,haml,erb}'

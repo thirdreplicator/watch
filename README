@@ -1,10 +1,18 @@
 A handy script to watch your files and run a command in the background.
 
+INSTALLATION
+============
+bundle install
+tail -2 Gemfile >> /your/app/Gemfile
+cp watch/watch.rb /your/app
+cd /your/app
+
 USAGE
 =====
+# The default assumes that you have RSpec tests in /your/app/spec
+#  If you want to change the test command, then edit watch.rb.
+#  Change line 3: command = 'rspec spec' to however you run your
+#  tests.
 
-gem install directory_watcher rev
-cp watch/watch.rb RAILS_ROOT
-cd RAILS_ROOT
 ruby watch.rb
 
